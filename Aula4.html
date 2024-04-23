@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin: 30px 30px;">
+
+    <!-- <h1 style="color: rgba(105, 240, 27, 0.582); font-size: 40px; font-family: Arial, Helvetica, sans-serif; margin: 0px 30px;"> Titulo da materia </h1>
+    <p style="color: blueviolet; font-size: 19px; font-family: Comic Sans MS, cursive; margin: 30px 30px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam numquam sequi expedita accusantium hic impedit labore explicabo quia iste dolor laboriosam minima, assumenda facere optio, recusandae ipsum! Minus, voluptatum provident.</p> -->
+    <!-- <div class="clock"; style="color: rgb(161, 119, 201); font-size: 37px; font-family: comic sans ms; font-weight: 900; margin: 0px 15px; ;"> -->
+         <div style="height: 300px; background-color: blueviolet; padding: 30px 30px; border-radius: 20px" class="time" id="time">12:00:00</div>
+        <div style="height: 300px; background-color: blueviolet; padding: 30px 30px; border-radius: 20px" class="time" id="time">12:00:00</div>
+      </div>
+      <script src="script.js"></script> 
+      <div style="height: 300px; background-color: blueviolet; margin: 30px; padding: 30px; border-radius: 20px;">
+        <div style="background-repeat: no-repeat; border-radius: 30px; width: 100%; height: 300px ;background-image: url(data:image/png;base64,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) ;">
+
+        </div>
+
+      </div>
+
+
+
+</body>
+</html>
+
+
